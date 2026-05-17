@@ -430,6 +430,22 @@
 
   gtag('config', 'AW-18075391115');
 </script>
+<!-- Event snippet for Outbound click (1) conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18075391115/Jm13CIj0u64cEIupgqtD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
 </head>
 <body>
   <header class="site-header">
@@ -457,7 +473,7 @@
         </div>
       </div>
       <div class="hero-poster" aria-label="Thalapathy Electronics service poster">
-        <a href="https://wa.link/and" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.link/and" onclick="return gtag_report_conversion(this.href)" rel="noopener noreferrer">
           <img src="thala.png" alt="Thalapathy best services poster with WhatsApp click to chat">
         </a>
       </div>
@@ -505,7 +521,7 @@
           <h2>Contact</h2>
           <p>Ready to book a service or ask about a repair? Send a message and share the product details.</p>
         </div>
-        <a class="whatsapp" href="https://wa.me/" target="_blank" rel="noopener">WhatsApp Click To Chat</a>
+        <a class="whatsapp" href="https://wa.me/" onclick="return gtag_report_conversion(this.href)" rel="noopener">WhatsApp Click To Chat</a>
       </div>
       <ul class="contact-list">
         <li>Business: Thalapathy Electronics</li>
