@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -422,36 +423,36 @@
     }
   </style>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18075391115"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18075391115"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'AW-18075391115');
-</script>
-<!-- Event snippet for Outbound click (1) conversion page
+    gtag('config', 'AW-18075391115');
+  </script>
+  <!-- Event snippet for Outbound click (1) conversion page
 In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18075391115/Jm13CIj0u64cEIupgqtD',
+        'event_callback': callback
+      });
+      return false;
     }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18075391115/Jm13CIj0u64cEIupgqtD',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
+  </script>
 </head>
+
 <body>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Thalapathy Electronics home">
       <span>Thalapathy</span>
-      <span>Electronics</span>
     </a>
     <nav class="nav" aria-label="Primary navigation">
       <a href="#services">Services</a>
@@ -464,13 +465,12 @@ function gtag_report_conversion(url) {
   <main>
     <section class="hero" id="home">
       <div class="hero-copy">
-        <p class="eyebrow">Best service for your electronics</p>
-        <h1>Thalapathy Electronics</h1>
-        <p class="lead">Quick, reliable electronics support for home appliances, gadgets, installation, and repairs.</p>
-        <div class="hero-actions">
-          <a class="cta" href="#contact">Contact Now</a>
-          <a class="secondary" href="#services">View Services</a>
-        </div>
+        <p class="eyebrow">Live Cricket Updates & Match Analysis</p>
+        <h1>Thalapathy Cricket Zone</h1>
+        <p class="lead">
+          Get the latest cricket news, match previews, player stats, IPL updates,
+          and expert analysis from around the world.
+        </p>
       </div>
       <div class="hero-poster" aria-label="Thalapathy Electronics service poster">
         <a href="https://wa.link/mythala" onclick="return gtag_report_conversion(this.href)" rel="noopener noreferrer">
@@ -480,40 +480,41 @@ function gtag_report_conversion(url) {
     </section>
 
     <section class="services" id="services">
-      <div class="section-head">
-        <h2>Services</h2>
-        <p>One place for dependable electronics care, from everyday fixes to installation support.</p>
-      </div>
-      <div class="service-grid">
-        <article class="service">
-          <strong>TV Service</strong>
-          <p>Display, sound, power, wall mounting, setup, and general troubleshooting.</p>
-        </article>
-        <article class="service">
-          <strong>Home Appliances</strong>
-          <p>Support for common household electronics and appliance repair needs.</p>
-        </article>
-        <article class="service">
-          <strong>Setup Help</strong>
-          <p>Installation, wiring, configuration, remote setup, and product guidance.</p>
-        </article>
-        <article class="service">
-          <strong>Fast Support</strong>
-          <p>Friendly local service with clear communication and practical solutions.</p>
-        </article>
-      </div>
-    </section>
+      <article class="service">
+        <strong>Live Scores</strong>
+        <p>Follow live cricket scores and ball-by-ball updates.</p>
+      </article>
 
-    <section class="band" id="why">
-      <div class="band-panel">
-        <h2>You are at the correct place.</h2>
-        <p>Thalapathy Electronics keeps service simple: explain the issue, get clear guidance, and move toward a fix without confusion.</p>
-      </div>
-      <div class="band-panel">
-        <h2>Give us one chance.</h2>
-        <p>For repairs, installation, and support, reach out and get your electronics checked by a team that values time and trust.</p>
-      </div>
+      <article class="service">
+        <strong>Match Predictions</strong>
+        <p>Expert analysis and predictions for international and league matches.</p>
+      </article>
+
+      <article class="service">
+        <strong>Player Statistics</strong>
+        <p>Detailed records, rankings, and performance analysis.</p>
+      </article>
+
+      <article class="service">
+        <strong>IPL & World Cup News</strong>
+        <p>Latest news and highlights from IPL, World Cup, and T20 leagues.</p>
+      </article>
     </section>
+    <div class="band-panel">
+      <h2>Your Cricket Destination</h2>
+      <p>
+        Stay updated with live scores, match schedules, player records,
+        and all major cricket events.
+      </p>
+    </div>
+
+    <div class="band-panel">
+      <h2>Never Miss a Match</h2>
+      <p>
+        Get instant updates, expert insights, and exciting cricket content
+        from around the world.
+      </p>
+    </div>
 
     <section class="contact" id="contact">
       <div>
@@ -521,7 +522,8 @@ function gtag_report_conversion(url) {
           <h2>Contact</h2>
           <p>Ready to book a service or ask about a repair? Send a message and share the product details.</p>
         </div>
-        <a class="whatsapp" href="https://wa.me/" onclick="return gtag_report_conversion(this.href)" rel="noopener">WhatsApp Click To Chat</a>
+        <a class="whatsapp" href="https://wa.me/" onclick="return gtag_report_conversion(this.href)"
+          rel="noopener">WhatsApp Click To Chat</a>
       </div>
       <ul class="contact-list">
         <li>Business: Thalapathy Electronics</li>
@@ -535,4 +537,5 @@ function gtag_report_conversion(url) {
     &copy; 2026 Thalapathy Electronics. Best services for your electronics.
   </footer>
 </body>
+
 </html>
